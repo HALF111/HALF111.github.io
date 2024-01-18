@@ -1,0 +1,123 @@
+// Custom styles.
+//设置标题区字体
+@font-face {
+  font-family: simi;
+  src: url('/assets/fonts/simi.otf');
+}
+//标题字体
+.site-title {
+  font-size: 30px;
+  font-family: 'simi' !important;
+}
+//副标题字体
+.site-subtitle {
+  font-size: 20px;
+  font-family: 'simi' !important;
+}
+
+// 修改标题字体粗细
+
+.posts-expand .post-title {
+  font-weight: 300;
+  font-weight: bold;
+}
+
+//自定义背景图片
+body{
+background:url(/assets/images/bg.jpg);
+background-attachment:fixed;
+}
+
+// 自定义文章链接样式
+.post-body a {
+  color: #42b983;
+  text-decoration: none;
+}
+
+.post-body ul, ol {
+  margin: 5px 5px;
+  padding-left: 20px;
+}
+
+// 自定义文章样式
+article {
+  background: white;
+  //box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.05);
+  margin-bottom: 12px;
+  padding: 0em 3em 0em;
+}
+
+// 自定义 footer 与 article 的间距
+.main {
+  padding-bottom: 100px; }
+
+.posts-collapse {
+  position: relative;
+  z-index: 1010;
+  background: white;
+  padding: 5px 15px 10px 15px;
+  margin-left: 0px;
+}
+
+.posts-expand {
+  margin: 0px 0px;
+}
+
+
+// 时间轴样式
+.posts-collapse {
+    margin: 50px 0px;
+}
+@media (max-width: 1023px) {
+    .posts-collapse {
+        margin: 50px 20px;
+    }
+}
+
+// 时间轴左边线条
+.posts-collapse::after {
+    margin-left: -2px;
+    background-image: linear-gradient(180deg,#f79533 0,#f37055 15%,#ef4e7b 30%,#a166ab 44%,#5073b8 58%,#1098ad 72%,#07b39b 86%,#6dba82 100%);
+}
+
+// 时间轴左边线条圆点颜色
+.posts-collapse .collection-title::before {
+    background-color: rgb(255, 255, 255);
+}
+
+// 时间轴文章标题左边圆点颜色
+.posts-collapse .post-header:hover::before {
+    background-color: rgb(161, 102, 171);
+}
+
+// 时间轴年份
+.posts-collapse .collection-title h1, .posts-collapse .collection-title h2 {
+    color: rgb(102, 102, 102);
+}
+
+// 时间轴文章标题
+.posts-collapse .post-title a {
+    color: rgb(80, 115, 184);
+}
+.posts-collapse .post-title a:hover {
+    color: rgb(161, 102, 171);
+}
+
+// 时间轴文章标题底部虚线
+.posts-collapse .post-header:hover {
+    border-bottom-color: rgb(161, 102, 171);
+}
+
+// archives页面顶部文字
+.page-archive .archive-page-counter {
+    color: rgb(0, 0, 0);
+}
+
+// archives页面时间轴左边线条第一个圆点颜色
+.page-archive .posts-collapse .archive-move-on {
+    top: 10px;
+    opacity: 1;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
